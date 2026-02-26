@@ -1,16 +1,87 @@
-# React + Vite
+📘 Users List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that fetches user data from a public API and displays it in a clean, responsive UI using Tailwind CSS.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fetches data from a public REST API
 
-## React Compiler
+Uses async/await for API calls
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Loading and error handling
 
-## Expanding the ESLint configuration
+Clean and responsive UI with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Modern React Hooks (useState, useEffect)
+
+Simple and beginner-friendly structure
+
+🛠️ Tech Stack
+
+React
+
+Tailwind CSS
+
+JavaScript (ES6+)
+
+Fetch API
+
+
+🌐 API Used
+Public API: https://jsonplaceholder.typicode.com/users
+
+📂 Project Structure
+users-list-app/
+│
+├── src/
+│   ├── user.jsx
+    ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── README.md
+
+⚙️ Installation & Setup
+
+1️⃣ Clone the repository
+git clone <https://github.com/prasadrprabhu77/UserList>
+cd users-list-app
+2️⃣ Install dependencies
+npm install
+3️⃣ Setup Tailwind CSS 
+npm install tailwindcss @tailwindcss/vite
+Add this to vite.config.js: import tailwindcss from '@tailwindcss/vite'
+add this in plugin: tailwindcss(),
+Replace CSS file with tailwindcss(),
+4️⃣ Run the project
+npm run dev
+
+🧠 How It Works
+
+useEffect runs when the component mounts.
+
+An async function fetches user data.
+
+Data is stored using useState.
+
+Conditional rendering handles:
+
+Loading state
+
+Error state
+
+Displaying users
+
+Tailwind utility classes provide styling.
+
+📸 UI Preview (Description)
+
+Clean white cards
+
+Responsive grid layout
+
+Smooth hover effect
+
+Mobile-friendly design
+
